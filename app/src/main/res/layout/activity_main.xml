@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    tools:context="com.thelazyj.recordwithmusic.MainActivity"
+    android:orientation="vertical">
+
+    <TextureView
+        android:id="@+id/cameraSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:id="@+id/ratioLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/ratioBtn_11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/ratio_11" />
+
+            <ImageButton
+                android:id="@+id/ratioBtn_34"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/ratioBtn_11"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/ratio_34" />
+
+            <ImageButton
+                android:id="@+id/ratioBtn_916"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/ratioBtn_34"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/ratio_916" />
+
+            <ImageButton
+                android:id="@+id/ratioBtn_full"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/ratioBtn_916"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/ratio_full" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fpsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/hd30"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/hd_30" />
+
+            <ImageButton
+                android:id="@+id/fhd30"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/hd30"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/fhd_30" />
+
+            <ImageButton
+                android:id="@+id/uhd30"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/fhd30"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/uhd_30" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/settingBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/icon_setting"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/setting_btn" />
+
+            <ImageButton
+                android:id="@+id/ratioBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/settingBtn"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/icon_ratio"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/ratio_34" />
+
+            <ImageButton
+                android:id="@+id/fpsBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/ratioBtn"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/icon_fps"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/hd_30" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true">
+
+            <ImageButton
+                android:id="@+id/galleryBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/icon_gallery"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gallery_folder" />
+
+
+            <ImageButton
+                android:id="@+id/recordBtn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/galleryBtn"
+                android:background="@null"
+                android:contentDescription="@string/icon_rec"
+                android:scaleType="centerCrop"
+                android:src="@drawable/startrec" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recordBtn"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/switchCamera"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/recordBtn"
+                android:background="@null"
+                android:contentDescription="@string/icon_swap"
+                android:scaleType="centerCrop"
+                android:src="@drawable/flip_camera" />
+
+            <Button
+                android:id="@+id/pictureBtn"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/recordBtn"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:text="@string/pho_cam2"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

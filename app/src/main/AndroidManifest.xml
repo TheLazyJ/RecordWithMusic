@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA2" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon_record_with_sounds"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_record_with_sounds_round"
+        android:theme="@style/Theme.RecordWithMusic"
+        android:supportsRtl="true"
+        tools:targetApi="31" >
+        <activity
+            android:name="com.thelazyj.recordwithmusic.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thelazyj.recordwithmusic.SettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.thelazyj.recordwithmusic.MainActivity"
+            android:windowIsFloating="true"
+            android:windowIsTranslucent="false"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            tools:ignore="Instantiatable" >
+        </activity>
+    </application>
+
+</manifest>

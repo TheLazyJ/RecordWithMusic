@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RecordWithMusic</string>
+    <string name="icon_gallery">Gallery</string>
+    <string name="icon_swap">Swap</string>
+    <string name="icon_pic">Pic</string>
+    <string name="icon_rec">Record</string>
+    <string name="pho_cam1">PHOTO</string>
+    <string name="pho_cam2">VIDEO</string>
+    <string name="icon_setting">Settings</string>
+    <string name="icon_fps">FPS</string>
+    <string name="icon_ratio">Ratio</string>
+    <string name="icon_flash">Flashlight</string>
+    <string name="bitrate_warning">  *Warning: Increasing the factor will improve quality but also the file size. At your own risk.</string>
+    <string name="frame_rate">Frame Rate</string>
+    <string name="bitrate_label">Bitrate Manual Factor</string>
+    <string name="camera_warning"> Will limit the number of camera the app will go through with the SWAP button. Numbers of camera will vary depending of your model.</string>
+    <string name="setting_folder">Save files in Gallery</string>
+    <string name="folder_warning">When active, all files will be save under "DCIM/Gallery", if not will be saved under "DCIM/Record with Music"</string>
+    <string-array name="camera_options">
+    <item>1 (back only)</item><item>2 (back-front)</item><item>3</item><item>4</item><item>5</item><item>6</item>
+    </string-array>
+</resources>
